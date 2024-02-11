@@ -1,0 +1,14 @@
+# Write a program that classifies a triangle based on its side lengths.
+side1 = int(input("Enter the side 1 -> "))
+side2 = int(input("Enter the side 2 -> "))
+side3 = int(input("Enter the side 3 -> "))
+if (side1 == side2 and side1 == side3):
+    print("triangle is Equilateral Triangle means all sides are equal")
+elif (side1 == side2 and side1 != side3):
+    print(f"{side1} and {side2}, 2 sides are equal. So, This is a  Isosceles Triangle.")
+elif (side1 == side3 and side1 != side2):
+    print(f"{side1} and {side3}, 2 sides are equal. So, This is a  Isosceles Triangle.")
+elif (side2 == side3 and side1 != side2):
+    print(f"{side2} and {side3},2 sides are equal. So, This is a  Isosceles Triangle.")
+else:
+    print(f"{side1}, {side2} and {side3} all are different. So, this is a Scalene Triangle")
