@@ -1,7 +1,9 @@
 # Write a program that classifies a triangle based on its side lengths.
+
 side1 = int(input("Enter the side 1 -> "))
 side2 = int(input("Enter the side 2 -> "))
 side3 = int(input("Enter the side 3 -> "))
+
 if (side1 == side2 and side1 == side3):
     print("triangle is Equilateral Triangle means all sides are equal")
 elif (side1 == side2 and side1 != side3):
